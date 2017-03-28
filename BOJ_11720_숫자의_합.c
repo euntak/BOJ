@@ -4,14 +4,17 @@
 //  Copyright © 2017년 21panic. All rights reserved.
 
 #include <stdio.h>
-int main(void) {
-    int i,n,m,a=0;
+#include <string.h>
 
-    scanf("%d %d", &n, &m);
+int main(void) {
+    int i,n,a=0;
+
+    char m[100];
+
+    scanf("%d %s", &n, &m);
 
     for(i = 0; i < n; i++) {
-        a += m % 10;
-        m /= 10;
+       a += m[i]-'0';
     }
 
     printf("%d", a);
