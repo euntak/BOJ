@@ -24,3 +24,13 @@ int main(void) {
 
     return 0;
 }
+
+/*
+해결.
+
+두 가지 방법으로 white space를 문자열로 인식하여 받는다.
+1. gets(str);
+2. scanf ( "%[^\n]s", &str);
+
+문자뒤에 WS가 오거나 NULL이 오는 경우에만 단어의 개수를 증가시킨다.
+*/
