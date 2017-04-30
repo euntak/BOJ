@@ -20,7 +20,7 @@ int main(void) {
 
         fibonacci(input[i]);
         printf("%d %d\n", zero, one);
-        zero = 0; one = 0;
+        zero = 0; one = 0;`
     }
 
     return 0;
